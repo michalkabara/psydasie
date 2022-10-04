@@ -58,15 +58,11 @@ table {
 
 /*style*/
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: auto;
   max-width: 1300px;
   width: 80%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .top-bar {
@@ -78,14 +74,10 @@ table {
 }
 
 .top-bar .container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .top-bar .container .top-bar-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -99,12 +91,8 @@ table {
 
 .top-bar .container .top-bar-menu div {
   padding: 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 10px;
 }
 
@@ -113,14 +101,10 @@ table {
 }
 
 .menu-container .container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .menu-container .container .logo-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 50px;
 }
@@ -128,8 +112,6 @@ table {
 .menu-container .container .main-menu {
   color: #848485;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 50px;
 }
@@ -137,8 +119,6 @@ table {
 .menu-container .container .icons-menu {
   color: #5e5e5e;
   font-size: 23px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
