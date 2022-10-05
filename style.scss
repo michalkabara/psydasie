@@ -57,7 +57,10 @@ table {
 	margin: auto;
 	max-width: 1300px;
 	width: 80%;
-	align-items: center;
+}
+
+.page-container {
+	padding-top: 50px;
 }
 
 .top-bar {
@@ -95,11 +98,13 @@ table {
 			display: flex;
 			gap: 50px;
 		}
-		.main-menu {
+		.main-menu,
+		a {
 			color: #848485;
 			text-transform: uppercase;
 			display: flex;
 			gap: 50px;
+			text-decoration: none;
 		}
 		.icons-menu {
 			color: #5e5e5e;
