@@ -66,6 +66,8 @@ table {
 
 .page-container {
   padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: space-between;
 }
 
 .top-bar {
@@ -126,5 +128,55 @@ table {
   font-size: 23px;
   display: flex;
   gap: 30px;
+}
+
+footer {
+  background-color: #f8f8f8;
+}
+
+footer .footer-container {
+  padding: 100px 0;
+  display: flex;
+  gap: 30px;
+}
+
+footer .footer-container .footer-text {
+  width: 70%;
+}
+
+footer .footer-container .footer-text p {
+  color: #696969;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 2em;
+}
+
+footer .footer-container .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+footer .footer-container .footer-links a {
+  text-decoration: none;
+  color: #696969;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  gap: 10px;
+}
+
+footer .footer-container .footer-links a i {
+  font-size: 16px;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  padding: 20px;
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #e9e8e8;
 }
 /*# sourceMappingURL=style.css.map */

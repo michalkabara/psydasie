@@ -12,16 +12,17 @@
 }
 
 .blog-posts {
-	display: grid;
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
 	gap: 30px;
-
+	flex-wrap: wrap;
 	.single-post {
-		width: 370px;
+		max-width: 300px;
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+		.post-miniature img {
+			width: 100%;
+		}
 		.post-title {
 			font-size: 18px;
 		}
@@ -49,8 +50,8 @@
 .blog-sidebar {
 	display: flex;
 	flex-direction: column;
-	padding: 0 50px;
 	gap: 30px;
+	flex-basis: 370px;
 	.sidebar-title {
 		font-size: 25px;
 		margin-bottom: 20px;
@@ -82,6 +83,28 @@
 			font-size: 15px;
 			font-weight: 600;
 			font-family: 'Poppins', sans-serif;
+		}
+	}
+
+	.popular {
+		.popular-container {
+			display: flex;
+			flex-direction: column;
+			.popular-post {
+				display: flex;
+				gap: 20px;
+				border-bottom: 1px solid #f1f1f1;
+				padding: 20px 0;
+				img {
+					width: 100px;
+					height: 90px;
+					object-fit: cover;
+				}
+				p {
+					font-weight: 500;
+					line-height: 1.3em;
+				}
+			}
 		}
 	}
 }
