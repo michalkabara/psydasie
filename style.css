@@ -138,10 +138,12 @@ footer .footer-container {
   padding: 100px 0;
   display: flex;
   gap: 30px;
+  justify-content: space-between;
 }
 
 footer .footer-container .footer-text {
   width: 70%;
+  flex-basis: 30%;
 }
 
 footer .footer-container .footer-text p {
@@ -151,22 +153,28 @@ footer .footer-container .footer-text p {
   line-height: 2em;
 }
 
-footer .footer-container .footer-links {
+footer .footer-container .footer-links-section {
+  display: flex;
+  gap: 100px;
+}
+
+footer .footer-container .footer-links-section .footer-links {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
-footer .footer-container .footer-links a {
+footer .footer-container .footer-links-section .footer-links a {
   text-decoration: none;
   color: #696969;
   font-size: 13px;
   font-weight: 500;
   display: flex;
+  align-items: flex-start;
   gap: 10px;
 }
 
-footer .footer-container .footer-links a i {
+footer .footer-container .footer-links-section .footer-links a i {
   font-size: 16px;
   align-items: center;
 }
