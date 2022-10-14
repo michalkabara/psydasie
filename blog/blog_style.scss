@@ -1,7 +1,7 @@
 .header-container {
 	display: grid;
 	grid-template-columns: 30% 70%;
-
+	gap: 20px;
 	.title {
 		display: flex;
 		align-content: center;
@@ -146,6 +146,21 @@
 	.blog-posts {
 		.single-post {
 			flex-basis: 100% !important;
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	.header-container {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		.title {
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			align-items: center;
+			font-size: 50px;
 		}
 	}
 }
