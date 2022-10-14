@@ -192,12 +192,59 @@ footer .footer-container .footer-links-section .footer-links a i {
   border-top: 1px solid #e9e8e8;
 }
 
+.hamburger {
+  display: none;
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  padding: 20px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: translateX(-180px);
+  width: 170px;
+  text-align: left;
+}
+
+.dropdown-menu nav {
+  width: 100%;
+}
+
+.dropdown-menu nav ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dropdown-menu nav ul li {
+  padding: 10px;
+}
+
+.dropdown-menu nav ul li:hover {
+  background-color: #e9e9e9;
+}
+
+.hamburger:hover .dropdown-menu {
+  position: absolute;
+  display: flex;
+}
+
 @media (max-width: 1150px) {
   .main-menu {
     display: none !important;
   }
   .icons-menu {
     display: none !important;
+  }
+  .hamburger {
+    display: initial;
+  }
+  .hamburger button {
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+    background-color: transparent;
   }
 }
 

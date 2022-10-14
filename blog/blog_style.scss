@@ -28,6 +28,10 @@
 		}
 		.post-title {
 			font-size: 18px;
+			a {
+				text-decoration: none;
+				color: black;
+			}
 		}
 		.date {
 			color: #787878;
@@ -114,7 +118,22 @@
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1350px) {
+	.blog-posts {
+		flex-basis: 72% !important;
+	}
+}
+
+@media (max-width: 1280px) {
+	.blog-posts {
+		flex-basis: 70% !important;
+		.single-post {
+			flex-basis: 45% !important;
+		}
+	}
+}
+
+@media (max-width: 1120px) {
 	.blog-posts {
 		flex-basis: 100% !important;
 		.single-post {

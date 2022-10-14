@@ -35,6 +35,11 @@
   font-size: 18px;
 }
 
+.blog-posts .single-post .post-title a {
+  text-decoration: none;
+  color: black;
+}
+
 .blog-posts .single-post .date {
   color: #787878;
   font-size: 14px;
@@ -122,7 +127,22 @@
   border-bottom: 1px solid #f1f1f1;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1350px) {
+  .blog-posts {
+    flex-basis: 72% !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .blog-posts {
+    flex-basis: 70% !important;
+  }
+  .blog-posts .single-post {
+    flex-basis: 45% !important;
+  }
+}
+
+@media (max-width: 1120px) {
   .blog-posts {
     flex-basis: 100% !important;
   }
