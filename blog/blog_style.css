@@ -59,32 +59,32 @@
   line-clamp: 3;
 }
 
-.blog-sidebar {
+.sidebar {
   display: flex;
   flex-direction: column;
   gap: 30px;
   flex-basis: 20%;
 }
 
-.blog-sidebar .sidebar-title {
+.sidebar .sidebar-title {
   font-size: 25px;
   margin-bottom: 20px;
 }
 
-.blog-sidebar .categories div {
+.sidebar .categories div {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.blog-sidebar .categories a {
+.sidebar .categories a {
   text-decoration: none;
   font-size: 14px;
   color: #a3a4a3;
   font-weight: 500;
 }
 
-.blog-sidebar .search {
+.sidebar .search {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,7 +94,7 @@
   padding-bottom: 8px;
 }
 
-.blog-sidebar .search input {
+.sidebar .search input {
   border: 0;
   padding: 0;
   font-size: 15px;
@@ -102,29 +102,29 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.blog-sidebar .popular .popular-container {
+.sidebar .popular .popular-container {
   display: flex;
   flex-direction: column;
 }
 
-.blog-sidebar .popular .popular-container .popular-post {
+.sidebar .popular .popular-container .popular-post {
   display: flex;
   gap: 20px;
   padding: 20px 0;
 }
 
-.blog-sidebar .popular .popular-container .popular-post img {
+.sidebar .popular .popular-container .popular-post img {
   width: 100px;
   height: 90px;
   object-fit: cover;
 }
 
-.blog-sidebar .popular .popular-container .popular-post p {
+.sidebar .popular .popular-container .popular-post p {
   font-weight: 500;
   line-height: 1.3em;
 }
 
-.blog-sidebar .popular .popular-container .popular-post:not(:last-child) {
+.sidebar .popular .popular-container .popular-post:not(:last-child) {
   border-bottom: 1px solid #f1f1f1;
 }
 

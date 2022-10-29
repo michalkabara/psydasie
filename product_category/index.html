@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://unpkg.com/phosphor-icons"></script>
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../blog/blog_style.css" />
+		<link rel="stylesheet" href="product_categoru_style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!--topbar-->
+		<div class="top-bar">
+			<div class="container">
+				<div class="info">Free shipping for orders over $59 !</div>
+				<div class="top-bar-menu">
+					<div><i class="ph-facebook-logo-fill" style="font-size: 21px"></i></div>
+					<div>
+						<span><i class="ph-map-pin-fill" style="font-size: 15px"></i></span><span>Store location</span>
+					</div>
+					<div>
+						<span class="icon"><i class="ph-truck-fill" style="font-size: 18px"></i></span
+						><span>Order Status</span>
+					</div>
+					<div>
+						<span>English <i class="ph-caret-down" style="transform: translateY(2px)"></i></span>
+					</div>
+					<div>
+						<span>USD <i class="ph-caret-down" style="transform: translateY(2px)"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--menu-->
+		<div class="menu-container">
+			<div class="container">
+				<div class="logo-menu">
+					<a href="./index.html"><div class="logo">LOGO</div></a>
+
+					<nav>
+						<ul class="main-menu">
+							<li><a href="../index.html">HOME</a></li>
+							<li>SHOP</li>
+							<li>PROJECT</li>
+							<li>ELEMENTS</li>
+							<li><a href="/blog/">BLOG</a></li>
+							<li>PAGES</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="icons-menu">
+					<div>
+						<span><i class="ph-user"></i></span>
+					</div>
+					<div>
+						<span><i class="ph-magnifying-glass"></i></span>
+					</div>
+					<div>
+						<span><i class="ph-heart-straight"></i></span>
+					</div>
+					<div>
+						<span><i class="ph-shopping-cart"></i></span>
+					</div>
+				</div>
+				<div class="hamburger">
+					<button><i class="ph-list-fill"></i></button>
+					<div class="dropdown-menu">
+						<nav>
+							<ul>
+								<li><a href="../index.html">HOME</a></li>
+								<li>SHOP</li>
+								<li>PROJECT</li>
+								<li>ELEMENTS</li>
+								<li><a href="/blog/">BLOG</a></li>
+								<li>PAGES</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="header-container">
+				<div class="title"><h1>Smycze</h1></div>
+				<div class="header_img">
+					<img style="width: 100%" src="../img/blog_header_img.png" alt="blog header img" />
+				</div>
+			</div>
+		</div>
+		<div class="blog-body">
+			<div class="container page-container">
+				<div class="breadcrumbs-sorting-container">
+					<div class="breadcrumbs">
+						<span>Home > Products</span>
+					</div>
+					<div class="sorting-container">
+						<div class="sorting">
+							<select name="sorting" id="">
+								<option value="1">Default sorting</option>
+								<option value="2">2</option>
+							</select>
+						</div>
+						<div class="view-style">
+							<button><i class="ph-rows"></i></button>
+							<button><i class="ph-dots-nine-bold"></i></button>
+							<button><i class="ph-squares-four-fill"></i></button>
+						</div>
+						<div class="filters"><i class="ph-funnel"></i><span>Filters</span></div>
+					</div>
+				</div>
+				<div class="sidebar">
+					<div class="categories">
+						<p class="sidebar-title">Product categories</p>
+						<div>
+							<span class="category-link"
+								><a href="#">Gift ideas</a> <span class="number-of-items">12</span></span
+							>
+							<span class="category-link"
+								><a href="#">Gift ideas</a> <span class="number-of-items">12</span></span
+							>
+							<span class="category-link"
+								><a href="#">Gift ideas</a> <span class="number-of-items">12</span></span
+							>
+							<span class="category-link"
+								><a href="#">Gift ideas</a> <span class="number-of-items">12</span></span
+							>
+						</div>
+					</div>
+
+					<div class="price">
+						<p class="sidebar-title">Cena</p>
+						<div class="price-inner">
+							<div class="radio-container">
+								<input type="radio" id="hundred" name="price" /> <label for="hundred">poniżej 100zł</label>
+							</div>
+							<div class="radio-container">
+								<input type="radio" id="above-hundred" name="price" />
+								<label for="above-hundred">100zł do 300zł</label>
+							</div>
+							<div class="radio-container">
+								<input type="radio" id="above-threehundred" name="price" />
+								<label for="above-threehundred">300zł do 600zł</label>
+							</div>
+							<div class="radio-container">
+								<input type="radio" id="above-sixhundred" name="price" />
+								<label for="above-sixhundred">600zł do <span class="max-price">5 800zł</span></label>
+							</div>
+							<div class="radio-container">
+								<input type="radio" id="max-price" name="price" />
+								<label for="max-price">poniżej 5 800zł</label>
+							</div>
+						</div>
+						<div class="manual-price-container">
+							<input type="text" placeholder="Od" /> <span>-</span> <input placeholder="Do" type="text" />
+						</div>
+					</div>
+
+					<div class="colors-select">
+						<p class="sidebar-title">Kolor</p>
+						<div class="colors-inner">
+							<div class="color">
+								<div class="beige color-circle"></div>
+								<span>Beżowy</span>
+							</div>
+							<div class="color">
+								<div class="claret color-circle"></div>
+								<span>Bordowy</span>
+							</div>
+							<div class="color">
+								<div class="black color-circle"></div>
+								<span>Czarny</span>
+							</div>
+							<div class="color">
+								<div class="violet color-circle"></div>
+								<span>Fioletowy</span>
+							</div>
+							<div class="color">
+								<div class="white color-circle"></div>
+								<span>Biały</span>
+							</div>
+							<div class="color">
+								<div class="brown color-circle"></div>
+								<span>Brązowy</span>
+							</div>
+							<div class="color">
+								<div class="red color-circle"></div>
+								<span>Czerwony</span>
+							</div>
+							<div class="color">
+								<div class="navy color-circle"></div>
+								<span>Granatowy</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="features-select">
+						<p class="sidebar-title">Funkcje</p>
+						<div class="features-inner">
+							<div class="checkbox-container">
+								<input type="checkbox" /><label for="">Czujnik ruchu</label>
+							</div>
+							<div class="checkbox-container">
+								<input type="checkbox" /><label for="">Funkcja ściemniania</label>
+							</div>
+							<div class="checkbox-container"><input type="checkbox" /><label for="">Lampa LED</label></div>
+							<div class="checkbox-container">
+								<input type="checkbox" /><label for="">Na wysięgniku</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blog-posts"></div>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<div class="container footer-container">
+			<div class="footer-text">
+				<img src="" alt="asd" />
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse consequuntur voluptatem aspernatur
+					perspiciatis dolore incidunt voluptatum facilis. Eum, minus rem!
+				</p>
+			</div>
+			<div class="footer-links-section">
+				<div class="footer-links">
+					<a href="http://">About us</a>
+					<a href="">Store location</a>
+					<a href="">Contact</a>
+					<a href="">Orders</a>
+				</div>
+				<div class="footer-links">
+					<a href="">Returns</a>
+					<a href="">Support Policy</a>
+					<a href="">Size Guide</a>
+					<a href="">FAQs</a>
+				</div>
+				<div class="footer-links">
+					<a href=""><i class="ph-twitter-logo-fill"></i> Twitter</a>
+					<a href=""><i class="ph-facebook-logo-fill"></i> Facebook</a>
+					<a href=""><i class="ph-instagram-logo"></i> Instagram</a>
+					<a href=""><i class="ph-youtube-logo-fill"></i> Youtube</a>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>© 2022 Psydasie. All Rights Reserved</p>
+		</div>
+	</footer>
+</html>
