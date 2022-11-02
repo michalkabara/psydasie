@@ -116,119 +116,180 @@
 						<div class="filters"><i class="ph-funnel"></i><span>Filters</span></div>
 					</div>
 				</div>
-				<div class="sidebar">
-					<div class="categories">
-						<p class="sidebar-title">Product categories</p>
-						<div>
-							<span class="category-link"
-								><a href="#">Gift ideas</a> <span class="number-of-items">12</span></span
-							>
-							<span class="category-link"
-								><a href="#">Gift ideas</a> <span class="number-of-items">12</span></span
-							>
-							<span class="category-link"
-								><a href="#">Gift ideas</a> <span class="number-of-items">12</span></span
-							>
-							<span class="category-link"
-								><a href="#">Gift ideas</a> <span class="number-of-items">12</span></span
-							>
+
+				<div class="products-inner">
+					<div class="sidebar">
+						<div class="sidebar-block categories">
+							<p class="sidebar-title">Product categories</p>
+							<div>
+								<span class="category-link"
+									><a href="#">Gift ideas</a> <span class="number-of-items">12</span></span
+								>
+								<span class="category-link"
+									><a href="#">Gift ideas</a> <span class="number-of-items">12</span></span
+								>
+								<span class="category-link"
+									><a href="#">Gift ideas</a> <span class="number-of-items">12</span></span
+								>
+								<span class="category-link"
+									><a href="#">Gift ideas</a> <span class="number-of-items">12</span></span
+								>
+							</div>
+						</div>
+
+						<div class="sidebar-block price">
+							<p class="sidebar-title">Cena</p>
+							<div class="price-inner">
+								<div class="radio-container">
+									<input type="radio" id="hundred" name="price" /> <label for="hundred">poniżej 100zł</label>
+								</div>
+								<div class="radio-container">
+									<input type="radio" id="above-hundred" name="price" />
+									<label for="above-hundred">100zł do 300zł</label>
+								</div>
+								<div class="radio-container">
+									<input type="radio" id="above-threehundred" name="price" />
+									<label for="above-threehundred">300zł do 600zł</label>
+								</div>
+								<div class="radio-container">
+									<input type="radio" id="above-sixhundred" name="price" />
+									<label for="above-sixhundred">600zł do <span class="max-price">5 800zł</span></label>
+								</div>
+								<div class="radio-container">
+									<input type="radio" id="max-price" name="price" />
+									<label for="max-price">poniżej 5 800zł</label>
+								</div>
+							</div>
+							<div class="manual-price-container">
+								<input type="text" placeholder="Od" /> <span>-</span> <input placeholder="Do" type="text" />
+							</div>
+						</div>
+
+						<div class="sidebar-block colors-select">
+							<p class="sidebar-title">Kolor</p>
+							<div class="colors-inner">
+								<label class="color">
+									<input type="checkbox" name="kolor" id="beige" />
+									<i class="ph-check-bold checkmark"></i>
+									<div class="beige color-circle"></div>
+									<span>Beżowy</span>
+								</label>
+								<label class="color">
+									<input type="checkbox" name="kolor" id="claret" />
+									<i class="ph-check-bold checkmark"></i>
+									<div class="claret color-circle"></div>
+									<span>Bordowy</span>
+								</label>
+								<label class="color">
+									<input type="checkbox" name="kolor" id="black" />
+									<i class="ph-check-bold checkmark"></i>
+									<div class="black color-circle"></div>
+									<span>Czarny</span>
+								</label>
+								<label class="color">
+									<input type="checkbox" name="kolor" id="violet" />
+									<i class="ph-check-bold checkmark"></i>
+									<div class="violet color-circle"></div>
+									<span>Fioletowy</span>
+								</label>
+								<label class="color">
+									<input type="checkbox" name="kolor" id="white" />
+									<i class="ph-check-bold checkmark"></i>
+									<div class="white color-circle"></div>
+									<span>Biały</span>
+								</label>
+								<label class="color">
+									<input type="checkbox" name="kolor" id="brown" />
+									<i class="ph-check-bold checkmark"></i>
+									<div class="brown color-circle"></div>
+									<span>Brązowy</span>
+								</label>
+								<label class="color">
+									<input type="checkbox" name="kolor" id="red" />
+									<i class="ph-check-bold checkmark"></i>
+									<div class="red color-circle"></div>
+									<span>Czerwony</span>
+								</label>
+								<label class="color">
+									<input type="checkbox" name="kolor" id="navy" />
+									<i class="ph-check-bold checkmark"></i>
+									<div class="navy color-circle"></div>
+									<span>Granatowy</span>
+								</label>
+							</div>
+						</div>
+
+						<div class="sidebar-block features-select">
+							<p class="sidebar-title">Funkcje</p>
+							<div class="features-inner">
+								<div class="checkbox-container">
+									<input type="checkbox" /><label for="">Czujnik ruchu</label>
+								</div>
+								<div class="checkbox-container">
+									<input type="checkbox" /><label for="">Funkcja ściemniania</label>
+								</div>
+								<div class="checkbox-container"><input type="checkbox" /><label for="">Lampa LED</label></div>
+								<div class="checkbox-container">
+									<input type="checkbox" /><label for="">Na wysięgniku</label>
+								</div>
+							</div>
 						</div>
 					</div>
-
-					<div class="price">
-						<p class="sidebar-title">Cena</p>
-						<div class="price-inner">
-							<div class="radio-container">
-								<input type="radio" id="hundred" name="price" /> <label for="hundred">poniżej 100zł</label>
-							</div>
-							<div class="radio-container">
-								<input type="radio" id="above-hundred" name="price" />
-								<label for="above-hundred">100zł do 300zł</label>
-							</div>
-							<div class="radio-container">
-								<input type="radio" id="above-threehundred" name="price" />
-								<label for="above-threehundred">300zł do 600zł</label>
-							</div>
-							<div class="radio-container">
-								<input type="radio" id="above-sixhundred" name="price" />
-								<label for="above-sixhundred">600zł do <span class="max-price">5 800zł</span></label>
-							</div>
-							<div class="radio-container">
-								<input type="radio" id="max-price" name="price" />
-								<label for="max-price">poniżej 5 800zł</label>
+					<div class="products">
+						<div class="single-product">
+							<img src="../img/blog-miniature.png" alt="" />
+							<div class="name-and-price">
+								<p class="product-name">3D Attractive Pot</p>
+								<p class="price">$90.00</p>
 							</div>
 						</div>
-						<div class="manual-price-container">
-							<input type="text" placeholder="Od" /> <span>-</span> <input placeholder="Do" type="text" />
-						</div>
-					</div>
-
-					<div class="colors-select">
-						<p class="sidebar-title">Kolor</p>
-						<div class="colors-inner">
-							<label class="color">
-								<input type="checkbox" name="kolor" id="beige" />
-								<i class="ph-check-bold checkmark"></i>
-								<div class="beige color-circle"></div>
-								<span>Beżowy</span>
-							</label>
-							<label class="color">
-								<input type="checkbox" name="kolor" id="claret" />
-								<i class="ph-check-bold checkmark"></i>
-								<div class="claret color-circle"></div>
-								<span>Bordowy</span>
-							</label>
-							<label class="color">
-								<input type="checkbox" name="kolor" id="black" />
-								<i class="ph-check-bold checkmark"></i>
-								<div class="black color-circle"></div>
-								<span>Czarny</span>
-							</label>
-							<label class="color">
-								<input type="checkbox" name="kolor" id="violet" />
-								<i class="ph-check-bold checkmark"></i>
-								<div class="violet color-circle"></div>
-								<span>Fioletowy</span>
-							</label>
-							<label class="color">
-								<input type="checkbox" name="kolor" id="white" />
-								<i class="ph-check-bold checkmark"></i>
-								<div class="white color-circle"></div>
-								<span>Biały</span>
-							</label>
-							<label class="color">
-								<input type="checkbox" name="kolor" id="brown" />
-								<i class="ph-check-bold checkmark"></i>
-								<div class="brown color-circle"></div>
-								<span>Brązowy</span>
-							</label>
-							<label class="color">
-								<input type="checkbox" name="kolor" id="red" />
-								<i class="ph-check-bold checkmark"></i>
-								<div class="red color-circle"></div>
-								<span>Czerwony</span>
-							</label>
-							<label class="color">
-								<input type="checkbox" name="kolor" id="navy" />
-								<i class="ph-check-bold checkmark"></i>
-								<div class="navy color-circle"></div>
-								<span>Granatowy</span>
-							</label>
-						</div>
-					</div>
-
-					<div class="features-select">
-						<p class="sidebar-title">Funkcje</p>
-						<div class="features-inner">
-							<div class="checkbox-container">
-								<input type="checkbox" /><label for="">Czujnik ruchu</label>
+						<div class="single-product">
+							<img src="../img/blog-miniature.png" alt="" />
+							<div class="name-and-price">
+								<p class="product-name">3D Attractive Pot</p>
+								<p class="price">$90.00</p>
 							</div>
-							<div class="checkbox-container">
-								<input type="checkbox" /><label for="">Funkcja ściemniania</label>
+						</div>
+						<div class="single-product">
+							<img src="../img/blog-miniature.png" alt="" />
+							<div class="name-and-price">
+								<p class="product-name">3D Attractive Pot</p>
+								<p class="price">$90.00</p>
 							</div>
-							<div class="checkbox-container"><input type="checkbox" /><label for="">Lampa LED</label></div>
-							<div class="checkbox-container">
-								<input type="checkbox" /><label for="">Na wysięgniku</label>
+						</div>
+						<div class="single-product">
+							<img src="../img/blog-miniature.png" alt="" />
+							<div class="name-and-price">
+								<p class="product-name">3D Attractive Pot</p>
+								<p class="price">$90.00</p>
+							</div>
+						</div>
+						<div class="single-product">
+							<img src="../img/blog-miniature.png" alt="" />
+							<div class="name-and-price">
+								<p class="product-name">3D Attractive Pot</p>
+								<p class="price">$90.00</p>
+							</div>
+						</div>
+						<div class="single-product">
+							<img src="../img/blog-miniature.png" alt="" />
+							<div class="name-and-price">
+								<p class="product-name">3D Attractive Pot</p>
+								<p class="price">$90.00</p>
+							</div>
+						</div>
+						<div class="single-product">
+							<img src="../img/blog-miniature.png" alt="" />
+							<div class="name-and-price">
+								<p class="product-name">3D Attractive Pot</p>
+								<p class="price">$90.00</p>
+							</div>
+						</div>
+						<div class="single-product">
+							<img src="../img/blog-miniature.png" alt="" />
+							<div class="name-and-price">
+								<p class="product-name">3D Attractive Pot</p>
+								<p class="price">$90.00</p>
 							</div>
 						</div>
 					</div>
