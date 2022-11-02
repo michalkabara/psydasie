@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.products-body .sidebar-title {
+  font-weight: 600;
+  font-size: 19px;
+}
+
 .breadcrumbs-sorting-container {
   display: flex;
   flex-direction: row;
@@ -72,6 +77,23 @@
   font-weight: 500;
 }
 
+.sidebar .features-select .features-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar .features-select .features-inner .checkbox-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.sidebar .features-select .features-inner .checkbox-container label {
+  font-size: 14px;
+  transform: translateY(1px);
+}
+
 .sidebar .price {
   display: flex;
   gap: 20px;
@@ -129,6 +151,37 @@
   align-items: center;
   gap: 10px;
   font-size: 14px;
+  overflow: visible;
+  position: relative;
+}
+
+.sidebar .colors-select .colors-inner .color .checkmark {
+  opacity: 0;
+  transition: ease-in 0.1s;
+  pointer-events: none;
+  position: absolute;
+  z-index: 300;
+  transform: translate(5px, 1px);
+  color: white;
+}
+
+.sidebar .colors-select .colors-inner .color:hover input ~ .checkmark {
+  opacity: 0.5;
+}
+
+.sidebar .colors-select .colors-inner .color input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.sidebar .colors-select .colors-inner .color input:checked ~ .checkmark {
+  opacity: 1;
+}
+
+.sidebar .colors-select .colors-inner .color #white + i,
+.sidebar .colors-select .colors-inner .color #beige + i {
+  color: black;
 }
 
 .sidebar .colors-select .colors-inner .color .color-circle {
@@ -155,7 +208,7 @@
 
 .sidebar .colors-select .colors-inner .color .color-circle.white {
   background-color: white;
-  border: 1px solid #696969;
+  border: 1px solid #d4d4d4;
   box-sizing: border-box;
 }
 

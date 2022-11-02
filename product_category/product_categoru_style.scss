@@ -1,3 +1,10 @@
+.products-body {
+	.sidebar-title {
+		font-weight: 600;
+		font-size: 19px;
+	}
+}
+
 .breadcrumbs-sorting-container {
 	display: flex;
 	flex-direction: row;
@@ -71,6 +78,23 @@
 		}
 	}
 
+	.features-select {
+		.features-inner {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+			.checkbox-container {
+				display: flex;
+				gap: 5px;
+				align-items: center;
+				label {
+					font-size: 14px;
+					transform: translateY(1px);
+				}
+			}
+		}
+	}
+
 	.price {
 		display: flex;
 		gap: 20px;
@@ -122,6 +146,35 @@
 				align-items: center;
 				gap: 10px;
 				font-size: 14px;
+				overflow: visible;
+				position: relative;
+				.checkmark {
+					opacity: 0;
+					transition: ease-in 0.1s;
+					pointer-events: none;
+					position: absolute;
+					z-index: 300;
+					transform: translate(5px, 1px);
+					color: white;
+				}
+				&:hover input ~ .checkmark {
+					opacity: 0.5;
+				}
+
+				input {
+					position: absolute;
+					opacity: 0;
+					cursor: pointer;
+					&:checked ~ .checkmark {
+						opacity: 1;
+					}
+				}
+
+				#white + i,
+				#beige + i {
+					color: black;
+				}
+
 				.color-circle {
 					width: 25px;
 					height: 25px;
@@ -145,7 +198,7 @@
 
 					&.white {
 						background-color: white;
-						border: 1px solid #696969;
+						border: 1px solid #d4d4d4;
 						box-sizing: border-box;
 					}
 
