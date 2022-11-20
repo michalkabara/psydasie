@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 ol,
@@ -47,7 +47,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -58,10 +58,13 @@ table {
 
 /*style*/
 .container {
-  display: flex;
   margin: auto;
   max-width: 1300px;
   width: 80%;
+}
+
+.flex-container {
+  display: flex;
 }
 
 .page-container {
@@ -79,23 +82,18 @@ table {
   font-weight: 500;
   color: #696969;
 }
-
 .top-bar .container {
   justify-content: space-between;
 }
-
 .top-bar .container .top-bar-menu {
   display: flex;
 }
-
 .top-bar .container .top-bar-menu div:not(:last-child) {
   border-right: 1px solid #ccbdb0;
 }
-
 .top-bar .container .top-bar-menu div:last-child {
   padding-right: 0px;
 }
-
 .top-bar .container .top-bar-menu div {
   padding: 0 15px;
   display: flex;
@@ -106,16 +104,13 @@ table {
 .menu-container {
   padding: 20px 0;
 }
-
 .menu-container .container {
   justify-content: space-between;
 }
-
 .menu-container .container .logo-menu {
   display: flex;
   gap: 50px;
 }
-
 .menu-container .container .main-menu,
 .menu-container .container a {
   color: #848485;
@@ -124,7 +119,6 @@ table {
   gap: 50px;
   text-decoration: none;
 }
-
 .menu-container .container .icons-menu {
   color: #5e5e5e;
   font-size: 23px;
@@ -135,7 +129,6 @@ table {
 footer {
   background-color: #f8f8f8;
 }
-
 footer .footer-container {
   padding: 100px 0;
   display: flex;
@@ -143,31 +136,26 @@ footer .footer-container {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 footer .footer-container .footer-text {
   width: 70%;
   flex-basis: 30%;
 }
-
 footer .footer-container .footer-text p {
   color: #696969;
   margin-top: 10px;
   font-size: 14px;
   line-height: 2em;
 }
-
 footer .footer-container .footer-links-section {
   display: flex;
   flex-wrap: wrap;
   gap: 100px;
 }
-
 footer .footer-container .footer-links-section .footer-links {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-
 footer .footer-container .footer-links-section .footer-links a {
   text-decoration: none;
   color: #696969;
@@ -177,7 +165,6 @@ footer .footer-container .footer-links-section .footer-links a {
   align-items: flex-start;
   gap: 10px;
 }
-
 footer .footer-container .footer-links-section .footer-links a i {
   font-size: 16px;
   align-items: center;
@@ -206,27 +193,71 @@ footer .footer-container .footer-links-section .footer-links a i {
   width: 170px;
   text-align: left;
 }
-
 .dropdown-menu nav {
   width: 100%;
 }
-
 .dropdown-menu nav ul {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-
 .dropdown-menu nav ul li {
   padding: 10px;
 }
-
 .dropdown-menu nav ul li:hover {
   background-color: #e9e9e9;
 }
 
 .hamburger:hover .dropdown-menu {
   position: absolute;
+  display: flex;
+}
+
+.slider {
+  position: relative;
+  margin-bottom: 50px;
+  max-height: 595px;
+}
+.slider .slide {
+  aspect-ratio: 21/9;
+  transition: 300ms all ease-out;
+}
+.slider .slide img {
+  width: 90%;
+  object-fit: cover;
+  height: 100%;
+}
+.slider .slide.active-slide {
+  z-index: 3;
+  height: 100%;
+}
+.slider .slide:not(.active-slide) {
+  opacity: 0.5;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  position: absolute;
+  height: 89%;
+}
+.slider .slide:not(.active-slide) img {
+  width: 100%;
+  height: 100%;
+}
+.slider .controls {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.slider .controls i {
+  font-size: 25px;
+  padding: 7px 8px;
+  color: #aaaaaa;
+}
+
+.tiles {
   display: flex;
 }
 
@@ -247,7 +278,6 @@ footer .footer-container .footer-links-section .footer-links a i {
     background-color: transparent;
   }
 }
-
 @media (max-width: 940px) {
   .top-bar-menu {
     display: none !important;
@@ -255,5 +285,4 @@ footer .footer-container .footer-links-section .footer-links a i {
   .footer-text {
     flex-basis: 100% !important;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

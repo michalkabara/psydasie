@@ -53,10 +53,13 @@ table {
 /*style*/
 
 .container {
-	display: flex;
 	margin: auto;
 	max-width: 1300px;
 	width: 80%;
+}
+
+.flex-container {
+	display: flex;
 }
 
 .page-container {
@@ -206,6 +209,57 @@ footer {
 
 .hamburger:hover .dropdown-menu {
 	position: absolute;
+	display: flex;
+}
+
+.slider {
+	position: relative;
+	margin-bottom: 50px;
+	max-height: 595px;
+	.slide {
+		aspect-ratio: 21/9;
+		transition: 300ms all ease-out;
+
+		img {
+			width: 90%;
+			object-fit: cover;
+			height: 100%;
+		}
+
+		&.active-slide {
+			z-index: 3;
+			height: 100%;
+		}
+
+		&:not(.active-slide) {
+			opacity: 0.5;
+			z-index: -1;
+			top: 0;
+			right: 0;
+			position: absolute;
+			height: 89%;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	.controls {
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+		display: grid;
+		gap: 20px;
+		grid-template-columns: 1fr 1fr;
+		i {
+			font-size: 25px;
+			padding: 7px 8px;
+			color: #aaaaaa;
+		}
+	}
+}
+
+.tiles {
 	display: flex;
 }
 

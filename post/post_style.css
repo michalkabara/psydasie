@@ -4,20 +4,16 @@
   gap: 25px;
   flex-basis: 75%;
 }
-
 .blog-post-content img {
   width: 100%;
 }
-
 .blog-post-content .post-tags {
   color: #a3a4a3;
   font-size: 14px;
 }
-
 .blog-post-content .post-title {
   font-size: 30px;
 }
-
 .blog-post-content .post-date {
   display: flex;
   flex-direction: row;
@@ -27,16 +23,13 @@
   font-weight: 500;
   align-items: center;
 }
-
 .blog-post-content .post-date i {
   font-size: 18px;
 }
-
 .blog-post-content .post-content {
   line-height: 1.7em;
   font-size: 15px;
 }
-
 .blog-post-content .share-post {
   display: flex;
   flex-direction: row;
@@ -45,7 +38,6 @@
   font-size: 14px;
   font-weight: 600;
 }
-
 .blog-post-content .share-post a {
   display: flex;
   gap: 10px;
@@ -54,47 +46,39 @@
   text-decoration: none;
   color: #696969;
 }
-
 .blog-post-content .share-post a i {
-  border: 1px solid #d4d4d4;
+  border: 1px solid rgb(212, 212, 212);
   padding: 8px;
   border-radius: 50%;
 }
-
 .blog-post-content .post-author {
-  border-top: 1px solid #d4d4d4;
+  border-top: 1px solid rgb(212, 212, 212);
   padding-top: 30px;
 }
-
 .blog-post-content .post-author h3 {
   font-size: 20px;
 }
-
 .blog-post-content .post-author .post-author-inner {
   display: flex;
   margin-top: 30px;
   gap: 30px;
 }
-
 .blog-post-content .post-author .post-author-inner .post-author-img img {
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
 }
-
 .blog-post-content .post-author .post-author-inner .post-author-details {
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: space-around;
 }
-
 .blog-post-content .post-author .post-author-inner .post-author-name {
   font-size: 18px;
   font-weight: 600;
 }
-
 .blog-post-content .post-author .post-author-inner .post-author-bio p {
   font-size: 14px;
   font-weight: 400;
@@ -106,19 +90,16 @@
     flex-basis: 72% !important;
   }
 }
-
 @media (max-width: 1280px) {
   .blog-post-content {
     flex-basis: 70% !important;
   }
 }
-
 @media (max-width: 1120px) {
   .blog-post-content {
     flex-basis: 100% !important;
   }
 }
-
 @media (max-width: 475px) {
   .post-author {
     text-align: center;
@@ -128,5 +109,4 @@
     justify-content: center;
     text-align: center;
   }
-}
-/*# sourceMappingURL=post_style.css.map */
+}/*# sourceMappingURL=post_style.css.map */
