@@ -184,6 +184,12 @@ footer .footer-container .footer-links-section .footer-links a i {
   position: relative;
 }
 
+.section-title {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 .dropdown-menu {
   display: none;
   padding: 20px;
@@ -258,7 +264,70 @@ footer .footer-container .footer-links-section .footer-links a i {
 }
 
 .tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.tiles .two-tiles {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+}
+.tiles .tile {
+  background-color: rgb(231, 231, 231);
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 50px;
+  cursor: pointer;
+}
+.tiles .tile .inner-tile {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.tiles .tile .inner-tile .tile-title,
+.tiles .tile .inner-tile .tile-button {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.tiles .tile .inner-tile .tile-title i,
+.tiles .tile .inner-tile .tile-button i {
+  font-size: 15px;
+  transform: translate(-10px, 2px);
+  color: #ac5065;
+  transition: 300ms all ease-in-out;
+}
+.tiles .tile .inner-tile .tile-title button,
+.tiles .tile .inner-tile .tile-button button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: inherit;
+  letter-spacing: 3px;
+}
+.tiles .tile .inner-tile .tile-title {
+  font-size: 30px;
+}
+.tiles .tile .inner-tile .tile-title span {
+  font-weight: 600;
+  color: #ac5065;
+}
+.tiles .big-tile {
+  align-items: flex-end;
+  min-height: 230px;
+}
+.tiles .big-tile .inner-tile .tile-title {
+  font-size: 40px;
+}
+
+.tile:hover .inner-tile .tile-button i {
+  transform: translate(-15px, 2px) !important;
+  transition: 300ms all ease-in-out;
 }
 
 @media (max-width: 1150px) {
@@ -284,5 +353,8 @@ footer .footer-container .footer-links-section .footer-links a i {
   }
   .footer-text {
     flex-basis: 100% !important;
+  }
+  .tiles {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=style.css.map */
