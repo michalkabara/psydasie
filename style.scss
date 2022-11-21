@@ -177,15 +177,30 @@ footer {
 	border-top: 1px solid #e9e8e8;
 }
 
+.about {
+	margin-top: 70px;
+	h4 {
+		font-size: 24px;
+		margin-bottom: 40px;
+		font-weight: 500;
+	}
+	p {
+		margin-bottom: 40px;
+		font-size: 14px;
+		line-height: 1.3em;
+		color: gray;
+	}
+}
+
 .hamburger {
 	display: none;
 	position: relative;
 }
 
 .section-title {
-	font-size: 25px;
-	margin-top: 20px;
-	margin-bottom: 40px;
+	font-size: 30px;
+	margin-top: 70px;
+	margin-bottom: 70px;
 }
 
 .dropdown-menu {

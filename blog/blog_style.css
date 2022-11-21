@@ -35,10 +35,22 @@
   text-decoration: none;
   color: black;
 }
-.blog-posts .single-post .date {
+.blog-posts .single-post .date-and-views {
+  display: flex;
+  gap: 15px;
+}
+.blog-posts .single-post .date-and-views .date,
+.blog-posts .single-post .date-and-views .post-views {
   color: #787878;
   font-size: 14px;
   font-weight: 600;
+  display: flex;
+  gap: 6px;
+}
+.blog-posts .single-post .date-and-views .date i,
+.blog-posts .single-post .date-and-views .post-views i {
+  font-size: 16px;
+  transform: translateY(-1px);
 }
 .blog-posts .single-post .excerpt p {
   font-size: 13px;
@@ -50,6 +62,25 @@
   -webkit-line-clamp: 3; /* number of lines to show */
   line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+.blog-posts .single-post .post-read-more-button {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  width: fit-content;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 5px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+  transition: 300ms all ease;
+}
+.blog-posts .single-post .post-read-more-button:hover {
+  padding-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .sidebar {
