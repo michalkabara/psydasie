@@ -19,7 +19,7 @@
 	<body>
 		<!--topbar-->
 		<div class="top-bar">
-			<div class="container">
+			<div class="container flex-container">
 				<div class="info">Free shipping for orders over $59 !</div>
 				<div class="top-bar-menu">
 					<div><i class="ph-facebook-logo-fill" style="font-size: 21px"></i></div>
@@ -41,14 +41,50 @@
 		</div>
 		<!--menu-->
 		<div class="menu-container">
-			<div class="container">
-				<div class="logo-menu">
+			<div class="container flex-container">
+				<div class="main-menu-container logo-menu">
 					<a href="./index.html"><div class="logo">LOGO</div></a>
+
 					<nav>
 						<ul class="main-menu">
-							<li><a href="../index.html">HOME</a></li>
-							<li>SHOP</li>
-							<li>PROJECT</li>
+							<li class="dropdown-button">
+								<a href="../index.html">HOME</a>
+								<div class="dropdown-menu">
+									<div class="group">
+										<p class="group-category">Home group</p>
+										<ul>
+											<li>Asd</li>
+											<li>asd</li>
+											<li>asd</li>
+											<li>asd</li>
+										</ul>
+									</div>
+									<div class="group">
+										<p class="group-category">Home group</p>
+										<ul>
+											<li>Asd</li>
+											<li>asd</li>
+											<li>asd</li>
+											<li>asd</li>
+										</ul>
+									</div>
+									<div class="group">
+										<p class="group-category">Home group</p>
+										<ul>
+											<li>Asd</li>
+											<li>asd</li>
+											<li>asd</li>
+											<li>asd</li>
+										</ul>
+									</div>
+									<div class="category-img">
+										<img src="./img/slider1.png" alt="" />
+									</div>
+								</div>
+							</li>
+
+							<li><a href="">SHOP</a></li>
+							<li><a href="/product_category/">PRODUCTS</a></li>
 							<li>ELEMENTS</li>
 							<li><a href="/blog/">BLOG</a></li>
 							<li>PAGES</li>
@@ -69,6 +105,21 @@
 						<span><i class="ph-shopping-cart"></i></span>
 					</div>
 				</div>
+				<div class="hamburger">
+					<button><i class="ph-list-fill"></i></button>
+					<div class="dropdown-menu">
+						<nav>
+							<ul>
+								<li><a href="../index.html">HOME</a></li>
+								<li>SHOP</li>
+								<li>PROJECT</li>
+								<li>ELEMENTS</li>
+								<li><a href="/blog/">BLOG</a></li>
+								<li>PAGES</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- <div class="header">
@@ -80,7 +131,7 @@
 			</div>
 		</div> -->
 		<div class="blog-body">
-			<div class="container page-container">
+			<div class="container page-container flex-container">
 				<div class="blog-post-content">
 					<img src="../img/blog-head-img.png" alt="" />
 					<div class="post-tags"><span>DECOR</span><span> / </span><span>KITCHEN</span></div>
